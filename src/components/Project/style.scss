@@ -1,0 +1,40 @@
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 1.5rem;
+  border: 2px solid #05dab3;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.project-info {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-info__description {
+  flex: 1 0 auto;
+  margin-bottom: 0px;
+}
+
+.project-img {
+  display: flex;
+}
+
+.project-img__img {
+  width: 100%;
+  height: auto;
+}
+
+.project__life-status {
+  margin-top: auto;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 48em) {
+  .project {
+    grid-template-columns: 1fr;
+  }
+}

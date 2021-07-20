@@ -27,6 +27,10 @@
   border-radius: 50%;
 }
 
+.welcome-info {
+  line-height: 30px;
+}
+
 @media (max-width: 48em) {
   .about-me {
     grid-template-columns: 1fr;
