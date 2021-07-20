@@ -1,0 +1,76 @@
+.about {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-auto-rows: minmax(360px, auto);
+  gap: 2.5rem;
+  padding: 40px 0px;
+}
+
+.about-profile-pic img {
+  border-radius: 50%;
+}
+
+.about-info {
+  text-align: right;
+}
+
+.about-info__label1 {
+  margin: 0px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.about-info__label2 {
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.about-info__name {
+  margin: 0px;
+  font-size: 62px;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.about-info__occupation {
+  margin: 0px;
+  font-size: 42px;
+  font-weight: 200;
+}
+
+.about-more-info {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.about-more-info__description {
+  font-size: 24px;
+}
+
+.about-more-info__socials {
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 120px;
+  margin-left: auto;
+}
+
+@media (max-width: 48em) {
+  .about-profile-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+  .about-info,
+  .about-more-info {
+    text-align: center;
+  }
+  .about-more-info__socials {
+    margin: auto;
+  }
+}

@@ -2,7 +2,7 @@ import * as React from "react"
 import { Container, ContainerFluid } from "../Container";
 import { Header } from "../Header";
 import { Footer } from "../Footer";
-import "./index.scss";
+import "./style.scss";
 
 export const Layout = ({ children }) => {
     return(

@@ -1,0 +1,40 @@
+.card__image {
+  height: auto;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.card__image:hover {
+  background-color: #000;
+}
+
+.card__title {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card__tags .tag {
+  margin-right: 8px;
+}
+
+.card__tags .tag:last-of-type {
+  margin-right: 0px;
+}
+
+.card__cta {
+  margin-top: 24px;
+  color: #02218c;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-decoration: none;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.card__cta svg {
+  width: 12px;
+  height: 12px;
+}

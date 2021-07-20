@@ -1,0 +1,23 @@
+.search {
+  margin: 32px 0px;
+}
+
+.search__input {
+  font-size: 14px;
+  padding: 12px 16px;
+  width: 100%;
+  max-width: 460px;
+  border-radius: 0px;
+  border: 2px solid #d5dee6;
+  box-sizing: border-box;
+  margin: auto;
+  display: block;
+  color: #010203;
+  &:focus-visible {
+    outline: none;
+    border-color: #cce0f1;
+  }
+  &::placeholder {
+    color: #7e7f88;
+  }
+}

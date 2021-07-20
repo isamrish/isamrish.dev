@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./index.scss";
+import "./style.scss";
 export const Container: React.FC = ({ children }) => {
     return(
         <div className="container">{children}</div>
