@@ -21,9 +21,6 @@ export const Footer = () => {
                     <li>
                         <a href="https://isamrish.medium.com" target="_blank" rel="noopener noreferrer">Medium</a>
                     </li>
-                    <li>
-                        <a href="#">RSS</a>
-                    </li>
                 </ul>
             </div>
         </div>
