@@ -5,8 +5,8 @@
   align-items: center;
 }
 
-.footer__copyright {
-  font-size: 14px;
+.footer__copyright span {
+  font-size: 12px;
 }
 
 .footer ul {
@@ -35,7 +35,9 @@
     flex-direction: column;
   }
   .footer__copyright {
-    font-size: 12px;
     padding-bottom: 20px;
+  }
+  .footer__copyright span {
+    font-size: 12px;
   }
 }

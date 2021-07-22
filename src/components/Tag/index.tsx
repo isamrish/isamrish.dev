@@ -1,8 +1,12 @@
 import * as React from "react";
 import "./style.scss";
 
-export const Tag = () => {
+interface TagProps {
+    tag: string;
+}
+
+export const Tag: React.FC<TagProps> = ({ tag }) => {
     return(
-        <span className="tag">Tag</span>
+        <span className="tag">{tag}</span>
     )
 }

@@ -3,20 +3,43 @@ import { ChevronRight } from "react-feather"
 import { Tag } from "../Tag";
 import { Link } from "gatsby";
 import "./style.scss";
+interface CardProps {
+    title: string;
+    excerpt?: string;
+    featured_image: string;
+    tags: [string];
+    date: Date;
+    url?: string;
+    slug?: string;
+}
 
-export const Card = () => {
+export const Card: React.FC<CardProps> = ({ title, featured_image, tags, date, url, slug }) => {
     return(
         <div className="card">
-            <img src="https://images.unsplash.com/photo-1606787619248-f301830a5a57?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" className="card__image" />
-            <p className="card__title">This is heading of the part and I want to achieve things and I will work my assoff</p>
+            {slug && (
+                <Link to={slug}>
+                    <img src={featured_image} className="card__image" />
+                </Link>
+            )}
+            {url && (
+                <a href={url} target="_blank" rel="noreferrer">
+                     <img src={featured_image} className="card__image" />
+                </a>
+            )}
+            <p className="card__title">{title}</p>
             <div className="card__tags">
-                {Array.from([1,2,3]).map((res) => {
+                {tags?.map((res) => {
                     return(
-                        <Tag key={res} />
+                        <Tag key={res} tag={res} />
                     )
                 })}
             </div>
-            <Link to="#" className="card__cta">Read Full Article <ChevronRight /></Link>
+            {slug && (
+                <Link to={slug} className="card__cta">Read Full Article <ChevronRight /></Link>
+            )}
+            {url && (
+                <a href={url} target="_blank" className="card__cta">Read Full Article <ChevronRight /></a>
+            )}
         </div>
     )
 }

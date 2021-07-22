@@ -1,10 +1,12 @@
 import * as React from "react"
 import "./style.scss";
 export const Footer = () => {
-    const getCurrentYear = new Date().getFullYear;
+    const getCurrentYear = new Date().getFullYear();
     return(
         <div className="footer">
-            <div className="footer__copyright">Copyright &copy; 2020 isamrish.dev</div>
+            <div className="footer__copyright">
+                <span>Copyright &copy; {getCurrentYear} isamrish.dev</span>
+            </div>
             <div>
                 <ul>
                     <li>

@@ -16,7 +16,7 @@ export const About = () => {
             </div>
         </div>
         <div className="about-more-info">
-            <p className="about-more-info__description">I am mostly focused on frontend development with curiosity of building end to end system as whole. Currently I am working at MayaData. I love to write as well as build projects when I am free.</p>
+            <p className="about-more-info__description">I am mostly focused on frontend development with curiosity of building end to end system as whole. Currently I am working at MayaData. I love to write as well as build side projects when I am free.</p>
             <div className="about-more-info__socials">
                 <p>GitHub</p>
                 <p>Medium</p>

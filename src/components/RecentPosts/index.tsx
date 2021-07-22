@@ -2,15 +2,17 @@ import * as React from "react"
 import {  ChevronRight } from "react-feather";
 import { Card } from "../Card";
 import { Link } from "gatsby";
+import { usePosts } from "../../graphql/allPostsQuery";
 import "./style.scss";
 export const RecentPosts = () => {
+    const sortedPosts = usePosts(3);
     return(
         <div className="recent-posts">
             <h2 className="recent-posts__label">Recent Posts:</h2>
             <div className="recent-posts__posts">
-            {Array.from([1,2,3]).map((res) => {
+            {sortedPosts.map((res) => {
                 return(
-                    <Card key={res} />
+                    <Card {...res} key={res.title} />
                 )
             })}
             </div>
