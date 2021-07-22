@@ -5,12 +5,12 @@ import { Link } from "gatsby";
 import { usePosts } from "../../graphql/allPostsQuery";
 import "./style.scss";
 export const RecentPosts = () => {
-    const sortedPosts = usePosts(3);
+    const posts = usePosts(3);
     return(
         <div className="recent-posts">
             <h2 className="recent-posts__label">Recent Posts:</h2>
             <div className="recent-posts__posts">
-            {sortedPosts.map((res) => {
+            {posts.map((res) => {
                 return(
                     <Card {...res} key={res.title} />
                 )
