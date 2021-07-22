@@ -9,9 +9,6 @@ export const NavLinks = (props) => {
                     <Link to="/blog">Blog</Link>
                 </li>
                 <li className="nav__item">
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li className="nav__item">
                     <Link to="/about">About</Link>
                 </li>
             </ul>
