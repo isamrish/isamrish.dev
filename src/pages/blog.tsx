@@ -15,6 +15,7 @@ const BlogPage = () => {
   return (
     <Layout>
         <h2>Blog</h2>
+        <p><strong>Notes:</strong> Currently listed the posts which I have written on other platforms such as medium and my prev <a href="https://isamrish.com" target="_blank" rel="noopener">personal website</a>.</p>
         <Search search={search} setSearch={setSearch}  />
         <AllPosts posts={searchedPosts} search={search} />
     </Layout>
