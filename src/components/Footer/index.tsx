@@ -10,16 +10,16 @@ export const Footer = () => {
             <div>
                 <ul>
                     <li>
-                        <a href="#">GitHub</a>
+                        <a href="https://github.com/isamrish" target="_blank" rel="noopener noreferrer">GitHub</a>
                     </li>
                     <li>
-                        <a href="#">LinkedIn</a>
+                        <a href="https://linkedin.com/in/isamrish/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                     </li>
                     <li>
-                        <a href="#">Twitter</a>
+                        <a href="https://twitter.com/isamrishk" target="_blank" rel="noopener noreferrer">Twitter</a>
                     </li>
                     <li>
-                        <a href="#">Medium</a>
+                        <a href="https://isamrish.medium.com" target="_blank" rel="noopener noreferrer">Medium</a>
                     </li>
                     <li>
                         <a href="#">RSS</a>
