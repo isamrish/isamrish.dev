@@ -27,7 +27,7 @@ export const Header = () => {
                 <NavLinks />
             )}
         </div>
-        {device == 'mobile' && show && (
+        {device === 'mobile' && show && (
             <div className="mobile-nav">
                 <NavLinks className="mobile-nav__links" />
             </div>
