@@ -1,0 +1,31 @@
+.youtube_page_header {
+    height: 200px;
+}
+
+.youtube_header {
+    max-height: 300px;
+    height: 100%;
+}
+
+.youtube_footer {
+    height: 200px;
+}
+
+.youtube_video {
+    margin: 0px;
+}
+
+.youtube_video_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.header_title {
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

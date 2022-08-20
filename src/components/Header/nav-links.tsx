@@ -6,6 +6,9 @@ export const NavLinks = (props: any) => {
     <div className="nav" {...props}>
       <ul className="nav__list">
         <li className="nav__item">
+          <Link to="/youtube">YouTube</Link>
+        </li>
+        <li className="nav__item">
           <Link to="/blog">Code</Link>
         </li>
         <li className="nav__item">
