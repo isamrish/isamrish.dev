@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "isamrish.dev",
+    title: "Welcome to my site",
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -10,9 +10,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
-        trackingIds: [
-          "G-50ZWJ85Q0M",
-        ],
+        trackingIds: ["G-50ZWJ85Q0M"],
         pluginConfig: {
           head: false,
           respectDNT: true,
@@ -73,9 +71,9 @@ module.exports = {
       resolve: "gatsby-plugin-react-svg",
       options: {
         rule: {
-          include: /assets/
-        }
-      }
-    }
+          include: /assets/,
+        },
+      },
+    },
   ],
 };
