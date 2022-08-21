@@ -12,9 +12,6 @@ export const NavLinks = (props: any) => {
           <Link to="/blog">Code</Link>
         </li>
         <li className="nav__item">
-          <Link to="/productivity">Productivity</Link>
-        </li>
-        <li className="nav__item">
           <Link to="/about">About</Link>
         </li>
       </ul>
