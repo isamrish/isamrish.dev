@@ -1,7 +1,11 @@
 import * as React from "react";
 import "./style.scss";
 
-export const YouTubePageWrapper = ({ children }: any) => {
+export const YouTubePageWrapper = ({
+  children,
+}: {
+  children: React.ReactNode;
+}) => {
   return (
     <>
       <div className="youtube_header">

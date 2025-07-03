@@ -1,21 +1,19 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
+import Head from "next/head";
 
-const Head = ({ title }: { title: string }) => {
+const CustomHead = ({ title }: { title: string }) => {
   return (
     <>
-      <Helmet
-        defaultTitle="Welcome | IsAmrish"
-        title={title}
-        titleTemplate="%s | IsAmrish"
-      />
-      <script
-        async
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9666200095847888"
-        crossOrigin="anonymous"
-      />
+      <Head>
+        <title>{title ? `${title} | IsAmrish` : "Welcome | IsAmrish"}</title>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9666200095847888"
+          crossOrigin="anonymous"
+        />
+      </Head>
     </>
   );
 };
 
-export default Head;
+export default CustomHead;

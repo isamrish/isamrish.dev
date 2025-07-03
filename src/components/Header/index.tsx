@@ -1,9 +1,11 @@
 // import { useState } from "react";
-import { Link } from "gatsby";
+import Link from "next/link";
+
 import * as React from "react";
 // import { AlignRight, X } from "react-feather";
 // import { useDevice } from "../../hooks/useDevice";
 import { NavLinks } from "./nav-links";
+import { Container } from "../Container";
 import "./style.scss";
 export const Header = () => {
   //   const { device } = useDevice();
@@ -13,12 +15,14 @@ export const Header = () => {
   //   };
   return (
     <>
-      <div className="header">
-        <Link to="/" className="logo">
-          <h2>Amrish Kushwaha</h2>
-        </Link>
-        <NavLinks />
-      </div>
+      <Container>
+        <div className="header">
+          <Link href="/" className="logo">
+            <h2>Amrish Kushwaha</h2>
+          </Link>
+          <NavLinks />
+        </div>
+      </Container>
     </>
   );
 };

@@ -1,0 +1,34 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./src/components/YouTube/style.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.youtube_page_header {
+  height: 200px;
+}
+
+.youtube_header {
+  max-height: 300px;
+  height: 100%;
+}
+
+.youtube_footer {
+  height: 200px;
+}
+
+.youtube_video {
+  margin: 0px;
+}
+
+.youtube_video_list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_title {
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
