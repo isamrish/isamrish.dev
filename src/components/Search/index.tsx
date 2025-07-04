@@ -4,9 +4,9 @@ import "./style.scss";
 
 export const Search = ({...props}) => {
     const { setSearch } = props;
-    const handleSearch = (e) => {
-        setSearch(e.target.value);
-    }
+    const handleSearch = (e: React.KeyboardEvent<HTMLInputElement>) => {
+      setSearch((e.target as HTMLInputElement).value);
+    };
 
     const handleDebouncedSearch = _.debounce(handleSearch, 500);
 

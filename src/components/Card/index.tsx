@@ -9,7 +9,7 @@ interface CardProps {
   excerpt?: string;
   featured_image: string;
   tags: [string];
-  date: Date;
+  date?: Date;
   url?: string;
   slug?: string;
 }
@@ -18,7 +18,6 @@ export const Card: React.FC<CardProps> = ({
   title,
   featured_image,
   tags,
-  date,
   url,
   slug,
 }) => {
