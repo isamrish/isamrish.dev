@@ -1,18 +1,14 @@
-import * as React from "react";
 import styles from "./style.module.scss";
+import * as React from "react";
 
 export const AboutMeShort: React.FC = () => {
   return (
     <>
       <div className={styles.aboutMe}>
         <div className={styles.aboutMeInfo}>
-          <h1 className={styles.aboutMeDescription}>
-            Hello, I am Amrish Kushwaha.
-          </h1>
+          <h1 className={styles.aboutMeDescription}>Hi, I'm Amrish</h1>
           <h2 className={styles.aboutMeDescription}>
-            I am currently focused on frontend development with curiosity of
-            building end to end software system. I love to write as well as
-            build side projects when I am free.
+            I build performant web apps and developer tools.
           </h2>
         </div>
         <div className={styles.aboutMePic}>
