@@ -13,6 +13,9 @@ export const NavLinks = (props: any) => {
           <Link href="/learning">Learning</Link>
         </li>
         <li className="nav__item">
+          <Link href="/useful-prompts">Useful Prompts</Link>
+        </li>
+        <li className="nav__item">
           <Link href="/about">About</Link>
         </li>
       </ul>

@@ -1,9 +1,10 @@
-import React from 'react';
 import { Lato } from "next/font/google";
-import "../global.scss";
+import React from "react";
+import "../global.css";
 import "../reset.scss";
 import "../src/components/Layout/style.scss";
 import { Layout } from "../src/components/Layout";
+import { Toaster } from "@/components/ui/sonner";
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en" className={lato.className}>
       <body>
         <Layout>{children}</Layout>
+        <Toaster />
       </body>
     </html>
   );
