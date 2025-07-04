@@ -12,7 +12,7 @@ export const Footer = () => {
       <Container>
         <div className="footer">
           <div className="footer__copyright">
-            <span>Copyright &copy; {getCurrentYear} isamrish.dev</span>
+            <span>Copyright &copy; {getCurrentYear} amrishkushwaha.com</span>
           </div>
           <div>
             <ul>

@@ -1,16 +1,21 @@
 import React from 'react';
-import '../global.scss';
-import '../reset.scss';
-import '../src/components/Layout/style.scss';
-import { Layout } from '../src/components/Layout';
+import { Lato } from "next/font/google";
+import "../global.scss";
+import "../reset.scss";
+import "../src/components/Layout/style.scss";
+import { Layout } from "../src/components/Layout";
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en">
+    <html lang="en" className={lato.className}>
       <body>
-        <Layout>
-          {children}
-        </Layout>
+        <Layout>{children}</Layout>
       </body>
     </html>
   );
