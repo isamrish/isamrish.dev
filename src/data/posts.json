@@ -1,92 +1,92 @@
 {
     "posts": [
-        {
-            "title": "How to Dynamically Load Scripts in React",
-            "url": "https://javascript.plainenglish.io/how-to-load-a-dynamic-script-in-react-2940d30998dd",
-            "date": "2021-07-02",
-            "tags": ["React", "Javascript", "Technology"],
-            "featured_image": "https://miro.medium.com/max/1400/1*DyvlyZTDn7SclGE5mJi7vA.jpeg",
-            "excerpt": "Adding a script to the website is the common requirement. Let’s suppose that the website is using some external tools. To use it properly, you will have to use external JavaScript. pretty…"
-        },
-        {
-            "title": "SCSS(Sass) variable vs CSS function",
-            "url": "https://isamrish.medium.com/sass-variable-vs-css-function-56f09cfa2d9b",
-            "date": "2021-06-21",
-            "tags": ["CSS", "SCSS", "CSS3"],
-            "featured_image": "https://miro.medium.com/max/4800/1*fWPTwnLBSgrKVb3uqAvdvw.jpeg",
-            "excerpt": "CSS provides some functions such as calc, var etc. If you are using these functions in SCSS and if you are passing the SCSS variable, you will have to be a bit careful because how you use a SCSS…"
-        },
-        {
-            "title": "Update react component state on every route change in Docusaurus",
-            "url": "https://isamrish.medium.com/update-react-component-state-on-every-route-change-in-docusaurus-d4f36f87a497",
-            "date": "2021-06-16",
-            "tags": ["Docusaurus", "React", "Documentation"],
-            "featured_image": "https://miro.medium.com/max/2000/1*gxiDOJlRXcqFVoJWVqZ8vg.png",
-            "excerpt": "Let’s say you are building a documentation website using Docusaurus. There is some requirement that needs you to update the state or trigger to change the state of a react component that resides on…"
-        },
-        {
-            "title": "Docker commands to start with which every beginner should know",
-            "url": "https://faun.pub/docker-commands-to-start-with-which-every-beginner-should-know-fd77c74208aa",
-            "date": "2020-10-20",
-            "tags": ["Dockers", "Containers", "DevOps"],
-            "featured_image": "https://miro.medium.com/max/1400/1*UcP1Stlj3oVNJfOrcG0OKQ.png",
-            "excerpt": "I am Amrish Kushwaha and I am a front-end developer at MayaData Inc. My day to day life includes building web pages and web-related stuff for the company but sometimes I have to deep dive into docker…"
-        },
-        {
-            "title": "How to apply rendered property of a div or element into another div or element in angular",
-            "url": "https://blog.isamrish.dev/how-to-apply-rendered-property-of-a-div-into-another-div/",
-            "date": "2020-08-20",
-            "tags": ["Angular"],
-            "featured_image": "https://blog.isamrish.dev/static/ab8f5fd4e2b95fa01397f8adbff1ec69/rendered-property.png",
-            "excerpt": "Sometimes we want to use the rendered property of an HTML element such as height, width, etc.. to set the property in another HTML element."
-        },
-        {
-            "title": "For loop and active state in UI",
-            "url": "https://blog.isamrish.dev/for-loop-and-active-state-in-ui/",
-            "date": "2020-05-20",
-            "tags": ["HTML", "Angular"],
-            "featured_image": "https://blog.isamrish.dev/static/1bf99c0fcda30107a4c9b0b430cddc31/for-loop-and-active-state.png",
-            "excerpt": "One of the common patterns or UI elements is a list of items with an active state in one of the element and when you click on a different item, that item goes in the active state. This article will explain how to implement this kind of UI element."
-        },
-        {
-            "title": "Quick CSS: How to center an element exactly in the center of the screen",
-            "url": "https://blog.isamrish.dev/quick-css-how-to-center-an-element-exactly-in-the-center-of-the-screen/",
-            "date": "2020-05-13",
-            "tags": ["CSS"],
-            "featured_image": "https://blog.isamrish.dev/static/3c6bf2d3d2d160714ee6dd162d40313a/centered-aligned-element.png",
-            "excerpt": "You want to make a element to be centered aligned in the screen. What are the ways of centering the element in exactly the center in the screen?"
-        },
-        {
-            "title": "How to add google fonts as local fonts",
-            "url": "https://blog.isamrish.dev/how-to-add-google-fonts-as-local-fonts/",
-            "date": "2020-05-12",
-            "tags": ["Fonts", "Google Fonts"],
-            "featured_image": "https://blog.isamrish.dev/static/9dfdd9eb636e6b8cf1117c04f45699ad/google-fonts-as-local-fonts.png",
-            "excerpt": "One of the simple requirements of the web developer to add custom fonts on the website. Some times we want to add google fonts as local fonts to save our bandwidth, to save the numbers of network calls on our website."
-        },
-        {
-            "title": "How to design a list of responsive cards with equal heights",
-            "url": "https://blog.isamrish.dev/how-to-design-a-list-of-responsive-cards-with-equal-heights/",
-            "date": "2020-05-09",
-            "tags": ["HTML", "CSS"],
-            "featured_image": "https://blog.isamrish.dev/static/18f4d5d99239e93dea5974475622d51c/list-of-cards.png",
-            "excerpt": "A very common use case for a front end developer is to make a group of cards that has the same height as this."
-        },
-        {
-            "title": "How to add 3rd party script in your gatsby website",
-            "url": "https://blog.isamrish.dev/how-to-add-3rd-party-script-in-your-gatsby-website/",
-            "date": "2020-05-06",
-            "tags": ["Gatsby"],
-            "featured_image": "https://blog.isamrish.dev/static/ac1b70590b456d16aa190298c7daf4f4/add-external-scripts.png",
-            "excerpt": "Gatsby is a great choice especially when you want to build static websites such as marketing websites, portfolios, etc"
-        },
-        {
-            "title": "How to deploy an angular app on GitHub Pages using GitHub Actions",
-            "url": "https://blog.isamrish.dev/how-to-deploy-angular-app-on-github-pages-using-github-actions/",
-            "date": "2019-11-26",
-            "tags": ["Angular", "GitHub Actions"],
-            "featured_image": "https://blog.isamrish.dev/static/e9bb51570b3af3007770275a1e4f8b34/github-pages-with-github-actions.svg",
-            "excerpt": "In this article, I will explain - how to setup GiHub Actions workflow for your angular app."
-        }
+      {
+        "title": "How to Dynamically Load Scripts in React",
+        "url": "https://javascript.plainenglish.io/how-to-load-a-dynamic-script-in-react-2940d30998dd",
+        "date": "2021-07-02",
+        "tags": ["React", "Javascript", "Technology"],
+        "featured_image": "https://miro.medium.com/max/1400/1*DyvlyZTDn7SclGE5mJi7vA.jpeg",
+        "excerpt": "Adding a script to the website is the common requirement. Let’s suppose that the website is using some external tools. To use it properly, you will have to use external JavaScript. pretty…"
+      },
+      {
+        "title": "SCSS(Sass) variable vs CSS function",
+        "url": "https://isamrish.medium.com/sass-variable-vs-css-function-56f09cfa2d9b",
+        "date": "2021-06-21",
+        "tags": ["CSS", "SCSS", "CSS3"],
+        "featured_image": "https://miro.medium.com/max/4800/1*fWPTwnLBSgrKVb3uqAvdvw.jpeg",
+        "excerpt": "CSS provides some functions such as calc, var etc. If you are using these functions in SCSS and if you are passing the SCSS variable, you will have to be a bit careful because how you use a SCSS…"
+      },
+      {
+        "title": "Update react component state on every route change in Docusaurus",
+        "url": "https://isamrish.medium.com/update-react-component-state-on-every-route-change-in-docusaurus-d4f36f87a497",
+        "date": "2021-06-16",
+        "tags": ["Docusaurus", "React", "Documentation"],
+        "featured_image": "https://miro.medium.com/max/2000/1*gxiDOJlRXcqFVoJWVqZ8vg.png",
+        "excerpt": "Let’s say you are building a documentation website using Docusaurus. There is some requirement that needs you to update the state or trigger to change the state of a react component that resides on…"
+      },
+      {
+        "title": "Docker commands to start with which every beginner should know",
+        "url": "https://faun.pub/docker-commands-to-start-with-which-every-beginner-should-know-fd77c74208aa",
+        "date": "2020-10-20",
+        "tags": ["Dockers", "Containers", "DevOps"],
+        "featured_image": "https://miro.medium.com/max/1400/1*UcP1Stlj3oVNJfOrcG0OKQ.png",
+        "excerpt": "I am Amrish Kushwaha and I am a front-end developer at MayaData Inc. My day to day life includes building web pages and web-related stuff for the company but sometimes I have to deep dive into docker…"
+      },
+      {
+        "title": "How to apply rendered property of a div or element into another div or element in angular",
+        "url": "https://frontendroom.com/how-to-apply-rendered-property-of-a-div-into-another-div/",
+        "date": "2020-08-20",
+        "tags": ["Angular"],
+        "featured_image": "https://frontendroom.com/static/ab8f5fd4e2b95fa01397f8adbff1ec69/c2054/rendered-property.png",
+        "excerpt": "Sometimes we want to use the rendered property of an HTML element such as height, width, etc.. to set the property in another HTML element."
+      },
+      {
+        "title": "For loop and active state in UI",
+        "url": "https://frontendroom.com/for-loop-and-active-state-in-ui/",
+        "date": "2023-02-19",
+        "tags": ["HTML", "Angular"],
+        "featured_image": "https://frontendroom.com/static/1bf99c0fcda30107a4c9b0b430cddc31/0ccb9/for-loop-and-active-state.png",
+        "excerpt": "One of the common patterns or UI elements is a list of items with an active state in one of the element and when you click on a different item, that item goes in the active state. This article will explain how to implement this kind of UI element."
+      },
+      {
+        "title": "Quick CSS: How to center an element exactly in the center of the screen",
+        "url": "https://frontendroom.com/quick-css-how-to-center-an-element-exactly-in-the-center-of-the-screen/",
+        "date": "2023-02-19",
+        "tags": ["CSS"],
+        "featured_image": "https://frontendroom.com/static/3c6bf2d3d2d160714ee6dd162d40313a/0ccb9/centered-aligned-element.png",
+        "excerpt": "You want to make a element to be centered aligned in the screen. What are the ways of centering the element in exactly the center in the screen?"
+      },
+      {
+        "title": "How to add google fonts as local fonts",
+        "url": "https://frontendroom.com/how-to-add-google-fonts-as-local-fonts/",
+        "date": "2023-02-19",
+        "tags": ["Fonts", "Google Fonts"],
+        "featured_image": "https://frontendroom.com/static/9dfdd9eb636e6b8cf1117c04f45699ad/0ccb9/google-fonts-as-local-fonts.png",
+        "excerpt": "One of the simple requirements of the web developer to add custom fonts on the website. Some times we want to add google fonts as local fonts to save our bandwidth..."
+      },
+      {
+        "title": "How to design a list of responsive cards with equal heights",
+        "url": "https://frontendroom.com/how-to-design-a-list-of-responsive-cards-with-equal-heights/",
+        "date": "2023-02-19",
+        "tags": ["HTML", "CSS"],
+        "featured_image": "https://frontendroom.com/static/18f4d5d99239e93dea5974475622d51c/ffe02/list-of-cards.png",
+        "excerpt": "A very common use case for a front end developer is to make a group of cards that has the same height as this."
+      },
+      {
+        "title": "How to add 3rd party script in your gatsby website",
+        "url": "https://frontendroom.com/how-to-add-3rd-party-script-in-your-gatsby-website/",
+        "date": "2023-02-19",
+        "tags": ["Gatsby"],
+        "featured_image": "https://frontendroom.com/static/ac1b70590b456d16aa190298c7daf4f4/0ccb9/add-external-scripts.png",
+        "excerpt": "Gatsby is a great choice especially when you want to build static websites such as marketing websites, portfolios, etc"
+      },
+      {
+        "title": "How to deploy an angular app on GitHub Pages using GitHub Actions",
+        "url": "https://frontendroom.com/how-to-deploy-angular-app-on-github-pages-using-github-actions/",
+        "date": "2023-02-19",
+        "tags": ["Angular", "GitHub Actions"],
+        "featured_image": "https://frontendroom.com/static/97a97b3cc721c2c23aa9bd48f4c128ed/34435/frame.png",
+        "excerpt": "In this article, I will explain - how to setup GiHub Actions workflow for your angular app."
+      }
     ]
 }

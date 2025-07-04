@@ -7,10 +7,10 @@ export const NavLinks = (props: any) => {
     <div className="nav" {...props}>
       <ul className="nav__list">
         <li className="nav__item">
-          <Link href="/youtube">YouTube</Link>
+          <Link href="/blog">Blog</Link>
         </li>
         <li className="nav__item">
-          <Link href="/blog">Code</Link>
+          <Link href="/learning">Learning</Link>
         </li>
         <li className="nav__item">
           <Link href="/about">About</Link>
