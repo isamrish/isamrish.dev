@@ -1,7 +1,7 @@
 import * as React from "react";
 import { YouTubePageWrapper } from "./wrapper";
 import { ytVideos } from "../../data/youtube";
-import "./style.scss";
+
 export const YouTube = () => {
   const width = 430;
   const aspectRatio = 315 / 560;
@@ -12,7 +12,6 @@ export const YouTube = () => {
         return (
           <div
             key={video.url}
-            className="youtube_video"
             dangerouslySetInnerHTML={{
               __html: `<iframe
                  width="${width}"

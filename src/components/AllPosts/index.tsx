@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Card } from "../Card";
-import "./style.scss";
 
 interface Post {
   title: string;
@@ -18,11 +17,11 @@ export const AllPosts = ({
   search?: string;
 }) => {
   return (
-    <div className="all-posts">
-      <h2 className="all-posts__label">
+    <div className="py-8">
+      <h2 className="text-2xl font-bold text-center mb-8">
         All posts {search ? `: ${search}` : null}
       </h2>
-      <div className="all-posts__posts">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {posts.map((res: Post) => {
           return <Card {...res} key={res.title} />;
         })}
