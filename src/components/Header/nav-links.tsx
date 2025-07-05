@@ -15,8 +15,6 @@ export const NavLinks = ({ mobile = false, onItemClick }: NavLinksProps) => {
   const navItems = [
     { href: "/blog", label: "Blog" },
     { href: "/learning", label: "Learning" },
-    { href: "/useful-prompts", label: "Useful Prompts" },
-    { href: "/about", label: "About" },
   ];
 
   const isActive = (href: string) => {
