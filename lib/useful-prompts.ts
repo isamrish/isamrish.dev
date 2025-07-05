@@ -14,7 +14,7 @@ export interface UsefulPromptsData extends UsefulPromptsMetadata {
 }
 
 export function getUsefulPromptsData(): UsefulPromptsData {
-  const filePath = path.join(process.cwd(), 'src/content/useful-prompts.mdx');
+  const filePath = path.join(process.cwd(), "content/useful-prompts.mdx");
   const fileContents = fs.readFileSync(filePath, 'utf8');
   const { data, content } = matter(fileContents);
   
