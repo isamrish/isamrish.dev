@@ -18,10 +18,10 @@ const BlogPage = () => {
   return (
     <>
       <Head title="Blog List" />
-      <h2>Blog</h2>
+      <h2 className="text-2xl pt-4">Blog</h2>
       <p>
-        <strong>Notes:</strong> Currently listed the posts which I have written
-        on other platforms such as medium and my website.
+        <strong className="bold">Notes:</strong> Currently listed the posts
+        which I have written on other platforms such as medium and my website.
       </p>
       <Search search={search} setSearch={setSearch} />
       <AllPosts posts={searchedPosts} search={search} />

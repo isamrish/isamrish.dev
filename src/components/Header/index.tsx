@@ -1,23 +1,13 @@
-// import { useState } from "react";
 import Link from "next/link";
-
 import * as React from "react";
-// import { AlignRight, X } from "react-feather";
-// import { useDevice } from "../../hooks/useDevice";
 import { NavLinks } from "./nav-links";
 import { Container } from "../Container";
-import "./style.scss";
 export const Header = () => {
-  //   const { device } = useDevice();
-  //   const [show, setShow] = useState(false);
-  //   const handleMobile = () => {
-  //     setShow(!show);
-  //   };
   return (
     <>
       <Container>
-        <div className="header">
-          <Link href="/" className="logo">
+        <div className="py-6 flex items-center justify-between">
+          <Link href="/" className="text-2xl">
             <h2>Amrish Kushwaha</h2>
           </Link>
           <NavLinks />

@@ -4,7 +4,10 @@ import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 import { NextApiRequest, NextApiResponse } from "next";
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
+export default async function handler(
+  _req: NextApiRequest,
+  res: NextApiResponse
+) {
   const filePath = path.join(process.cwd(), "src/content/useful-prompts.mdx");
   const fileContent = fs.readFileSync(filePath, "utf-8");
 

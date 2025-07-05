@@ -1,10 +1,11 @@
 import { Lato } from "next/font/google";
 import React from "react";
-import "../global.css";
+import "./globals.css"; // Import Tailwind CSS
 import "../reset.scss";
 import "../src/components/Layout/style.scss";
 import { Layout } from "../src/components/Layout";
 import { Toaster } from "@/components/ui/sonner";
+
 
 const lato = Lato({ subsets: ["latin"], weight: ["400", "700"] });
 

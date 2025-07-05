@@ -1,41 +1,49 @@
 "use client";
 
-import React from "react";
+import { Copy, ExternalLink } from "lucide-react";
 import { MDXRemote } from "next-mdx-remote";
-import { Button } from "@/components/ui/button"
-import { toast } from "sonner"
-
+import React from "react";
+import { toast } from "sonner";
+import { Button } from "@/components/ui/button";
 
 const components = {
   code: (props: any) => {
     const handleCopy = () => {
       navigator.clipboard.writeText(props.children);
-      toast("Copied")
+      toast("Copied to clipboard");
+    };
+
+    const handleRunOnChatGPT = () => {
+      const chatGPTURL = `https://chat.openai.com/?prompt=${encodeURIComponent(
+        props.children
+      )}`;
+      window.open(chatGPTURL, "_blank");
+      toast("Opening in ChatGPT");
     };
 
     return (
-      <div style={{ position: "relative" }}>
-        <Button
-          onClick={handleCopy}
-          style={{
-            position: "absolute",
-            top: "5px",
-            right: "5px",
-            cursor: "pointer",
-          }}
-        >
-          Copy
-        </Button>
-        <pre
-          style={{
-            background: "#f4f4f4",
-            padding: "10px",
-            borderRadius: "4px",
-            lineHeight: "1.5",
-          }}
-        >
+      <div className="relative group p-1 mb-4">
+        <pre className="rounded-md p-4 overflow-auto bg-gray-200 text-black text-sm">
           <code {...props} />
         </pre>
+
+        <div className="my-2">
+          <Button
+            onClick={handleCopy}
+            variant="secondary"
+            className="mr-4"
+          >
+            <Copy className="mr-2" />
+            Copy
+          </Button>
+          <Button
+            onClick={handleRunOnChatGPT}
+            variant="default"
+          >
+            <ExternalLink className="mr-2" />
+            Run
+          </Button>
+        </div>
       </div>
     );
   },

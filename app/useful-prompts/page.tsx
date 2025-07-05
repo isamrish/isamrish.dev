@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Head from "../../src/components/Head";
 import MDXContent from "../../src/components/MDXContent";
 import { MDXRemoteSerializeResult } from "next-mdx-remote";
+import { Separator } from "@/components/ui/separator";
 
 interface DataProps {
   title?: string;
@@ -11,7 +12,9 @@ interface DataProps {
 }
 
 const UsefulPrompts = () => {
-  const [mdxSource, setMdxSource] = useState<MDXRemoteSerializeResult | null>(null);
+  const [mdxSource, setMdxSource] = useState<MDXRemoteSerializeResult | null>(
+    null
+  );
   const [data, setData] = useState<DataProps>({});
 
   useEffect(() => {
@@ -33,8 +36,9 @@ const UsefulPrompts = () => {
   return (
     <>
       <Head title="Useful Prompts" />
-      <h1>{data.title}</h1>
-      <p>{data.excerpt}</p>
+      <h1 className="text-3xl pt-4">{data.title}</h1>
+      <p className="text-sm mb-4">{data.excerpt}</p>
+      <Separator className="my-6" />
       <MDXContent mdxSource={mdxSource} />
     </>
   );
