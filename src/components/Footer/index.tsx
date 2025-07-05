@@ -102,6 +102,7 @@ export const Footer = () => {
     { href: "/about", label: "About" },
     { href: "/useful-prompts", label: "Useful Prompts" },
     { href: "/learning", label: "Learning" },
+    { href: "/logs", label: "Logs" },
   ];
 
   return (

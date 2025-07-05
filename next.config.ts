@@ -1,7 +1,7 @@
 import mdx from "@next/mdx";
 
 const withMDX = mdx({
-  extension: /\.mdx$/,
+  extension: /\.(md|mdx)$/,
 });
 
 const nextConfig = withMDX({
@@ -12,7 +12,7 @@ const nextConfig = withMDX({
     });
     return config;
   },
-  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx"],
+  pageExtensions: ["js", "jsx", "ts", "tsx", "mdx", "md"],
 });
 
 export default nextConfig;
