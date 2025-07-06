@@ -12,30 +12,10 @@ const UsefulPromptsPage = async () => {
     <>
       <Head title="Useful Prompts" />
       <article className="max-w-4xl mx-auto py-8">
-        {/* Header with frontmatter data */}
         <header className="mb-8 border-b pb-6">
           <h1 className="text-2xl font-bold mb-4 text-foreground">
             {metadata.title}
           </h1>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
-            <time dateTime={metadata.date}>
-              {new Date(metadata.date).toLocaleDateString("en-US", {
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })}
-            </time>
-            <div className="flex gap-1">
-              {metadata.tags.map((tag) => (
-                <span
-                  key={tag}
-                  className="px-2 py-1 bg-muted/50 rounded-full text-xs"
-                >
-                  #{tag}
-                </span>
-              ))}
-            </div>
-          </div>
           <p className="text-muted-foreground mt-4">{metadata.excerpt}</p>
         </header>
 
@@ -44,17 +24,17 @@ const UsefulPromptsPage = async () => {
             remarkPlugins={[remarkGfm]}
             components={{
               h1: ({ children }) => (
-                <h1 className="text-2xl font-semibold text-foreground mb-4 mt-8">
+                <h1 className="text-xl font-semibold text-foreground mb-4 mt-8">
                   {children}
                 </h1>
               ),
               h2: ({ children }) => (
-                <h2 className="text-xl font-semibold text-foreground mb-3 mt-6">
+                <h2 className="text-lg font-semibold text-foreground mb-3 mt-6">
                   {children}
                 </h2>
               ),
               h3: ({ children }) => (
-                <h3 className="text-lg font-semibold text-foreground mb-2 mt-4">
+                <h3 className="text-base font-semibold text-foreground mb-2 mt-4">
                   {children}
                 </h3>
               ),
