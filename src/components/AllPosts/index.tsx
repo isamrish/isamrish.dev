@@ -3,9 +3,9 @@ import { Card } from "../Card";
 
 interface Post {
   title: string;
-  tags: [string]; // Adjusted to match the expected type in CardProps
+  tags: string[]; // Changed to string array
   featured_image: string;
-  date: Date; // Adjusted to match the expected type in CardProps
+  date: string; // Changed to string
   [key: string]: any; // Extendable for other properties
 }
 
@@ -21,7 +21,7 @@ export const AllPosts = ({
       <h2 className="text-2xl font-bold text-center mb-8">
         All posts {search ? `: ${search}` : null}
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="flex flex-col gap-6">
         {posts.map((res: Post) => {
           return <Card {...res} key={res.title} />;
         })}

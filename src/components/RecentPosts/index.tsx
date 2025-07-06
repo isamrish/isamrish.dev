@@ -4,13 +4,23 @@ import { Card } from "../Card";
 import Link from "next/link";
 import { usePosts } from "../../graphql/allPostsQuery";
 
+interface Post {
+  title: string;
+  tags: string[];
+  featured_image: string;
+  date: string;
+  url?: string;
+  slug?: string;
+  excerpt?: string;
+}
+
 export const RecentPosts = () => {
-  const posts = usePosts(3);
+  const posts: Post[] = usePosts(3);
   return (
     <div className="mt-12 mb-8">
       <h2 className="text-2xl font-bold mb-6 text-foreground">Recent Posts:</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {posts.map((res: any) => {
+      <div className="flex flex-col gap-6">
+        {posts.map((res: Post) => {
           return <Card {...res} key={res.title} />;
         })}
       </div>
