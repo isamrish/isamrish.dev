@@ -14,7 +14,7 @@ const UsefulPromptsPage = async () => {
       <article className="max-w-4xl mx-auto py-8">
         {/* Header with frontmatter data */}
         <header className="mb-8 border-b pb-6">
-          <h1 className="text-4xl font-bold mb-4 text-foreground">
+          <h1 className="text-2xl font-bold mb-4 text-foreground">
             {metadata.title}
           </h1>
           <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
