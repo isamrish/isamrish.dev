@@ -124,7 +124,9 @@ export async function generateMetadata({
 
 export function generateStaticParams() {
   const blogs = getAllBlogsMetadata();
-  return blogs.map(blog => ({ slug: blog.slug }));
+  return blogs
+    ?.filter((blog) => !blog?.draft)
+    .map((blog) => ({ slug: blog.slug }));
 }
 
 export const dynamicParams = false;
